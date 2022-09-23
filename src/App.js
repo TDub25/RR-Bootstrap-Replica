@@ -1,30 +1,14 @@
 import './App.css';
-import React from 'react';
-import TopBar from './components/TopBar';
-import BackgroundImage from './components/BackgroundImage';
+import TopBar from './components/TopBar'
+import Background from './components/Background'
 import StoreListings from './components/StoreListings'
-
 
 function App() {
   return (
     <div className="App">
       <TopBar />
-      <br></br>
-      <BackgroundImage />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      {/* <Form/> */}
-    <StoreListings />
+      <Background />
+      <StoreListings />
     </div>
   );
 }

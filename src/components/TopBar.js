@@ -1,23 +1,22 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Button from 'react-bootstrap/Button'
-import Image from 'react-bootstrap/Image'
 
 export default function TopBar() {
     return (
-        <Navbar bg="light" expand="lg" >
-            <Navbar.Brand style={{margin: "5px"}} href="#home">
-            <Image style = {{ height: "60px", width: "130px", border: "1px solid #E8E9EB" }} src = "https://images.squarespace-cdn.com/content/v1/5a42ecabedaed8b07382c381/1517426035629-C2KV3NEMUFIXUU3SZGP3/Group+66+Copy.jpg" /> 
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" style= {{marginLeft:"1600px"}}>
-                <Nav className="mr-auto"> 
-                </Nav>
-            <Nav>
-                <Nav.Link href="#LogIn">Log In</Nav.Link>
-                <Button variant="success">Sign Up</Button>{' '}
-            </Nav>
-        </Navbar.Collapse>
-        </Navbar>
-            )
+        <div>
+            <Navbar bg="light" expand="lg" >
+                <Navbar.Brand style={{margin: "5px 0 0 20px"}} href="#home"><img src="https://d2guulkeunn7d8.cloudfront.net/assets/beetstrap/brand/instacart-logo-color-4db9d81ca0b7638befdc4bd331f64a2633df790c0b55ef627c99b1ba77af72b7.svg" /> </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto"> 
+                    </Nav>
+                    <Nav style={{padding: "24px 40px 20px 40px", fontSize: "18px", lineHeight: "26px", fontWeight: "bolder", display: "flex" }} >
+                        <Nav.Link style={{color: "#343538"}} href="#LogIn">Log In</Nav.Link>
+                        <Button variant="success" style={{fontSize: "18px"}}>Sign Up</Button>{' '}
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        </div>
+    )
 }
